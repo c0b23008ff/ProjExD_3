@@ -195,8 +195,6 @@ def main():
                 screen.blit(txt, [WIDTH/2-150, HEIGHT/2])
                 pg.display.update()
                 time.sleep(5)
-
-               
                 return
         for i, bomb in enumerate(bombs):
             if beam is not None:
@@ -207,7 +205,6 @@ def main():
                     pg.display.update()
                     score.score += 1
         bombs = [bomb for bomb in bombs if bomb is not None]
-
 
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
