@@ -138,6 +138,14 @@ class Beam:
 
 
 class Score:
+    """
+    スコアを表示する
+    self.fonto はフォントの設定
+    self.color は文字色の設定
+    self.score はスコアの初期値の設定
+    self.txt は文字列Surfaceの生成
+    self.txt_center 文字列の中心座標
+    """
     def __init__(self):
         self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
         self.color = (0, 0, 255)
